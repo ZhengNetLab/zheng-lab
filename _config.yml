@@ -1,9 +1,10 @@
 title: "Zheng Lab for Network Science"
 description: "Linking theory, data, and society — econometrics × networks × sports analytics."
-url: "https://zheng-lab.github.io"  # e.g. https://your-username.github.io
-baseurl: ""  # for project sites, set to '/repo-name'
+url: "https://zhengnetlab.github.io"  # e.g. https://your-username.github.io
+baseurl: "/zheng-lab"  # for project sites, set to '/repo-name'
 lang: en
 timezone: Europe/Berlin
+logo: /assets/images/logo.svg
 
 # Build
 markdown: kramdown

@@ -1,0 +1,73 @@
+title: "Zheng Lab for Network Science"
+description: "Linking theory, data, and society — econometrics × networks × sports analytics."
+url: ""  # e.g. https://your-username.github.io
+baseurl: ""  # for project sites, set to '/repo-name'
+lang: en
+timezone: Europe/Berlin
+
+# Build
+markdown: kramdown
+theme: null
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+plugins:
+  - jekyll-remote-theme
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-include-cache
+
+# Pagination
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+# Author profile
+author:
+  name: "Ethan Zheng"
+  avatar: "/assets/img/avatar.png"   # replace with your headshot (optional)
+  bio: "Econometrician & network scientist building Zheng Lab — causal inference, spectral graph theory, and sports analytics."
+  location: "Munich, Germany"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/your-username"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/your-handle"
+    - label: "YouTube"
+      icon: "fab fa-youtube"
+      url: "https://www.youtube.com/@HiddenLinks"
+
+# Site owner socials (header/footer)
+twitter:
+  username: ""
+github:
+  username: "your-username"
+
+# UI
+minimal_mistakes_skin: "default"  # "air", "contrast", "dark", "dirt", "mint", "sunrise"
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      share: true
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: single
+      author_profile: true
+
+# Collections (optional for projects)
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+# Navigation
+include: ["_pages"]

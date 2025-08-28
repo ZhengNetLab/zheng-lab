@@ -1,6 +1,6 @@
 title: "Zheng Lab for Network Science"
 description: "Linking theory, data, and society — econometrics × networks × sports analytics."
-url: ""  # e.g. https://your-username.github.io
+url: "https://zheng-lab.github.io"  # e.g. https://your-username.github.io
 baseurl: ""  # for project sites, set to '/repo-name'
 lang: en
 timezone: Europe/Berlin
@@ -29,19 +29,19 @@ author:
   links:
     - label: "GitHub"
       icon: "fab fa-github"
-      url: "https://github.com/your-username"
+      url: "https://github.com/ZhengNetLab"
     - label: "LinkedIn"
       icon: "fab fa-linkedin"
       url: "https://www.linkedin.com/in/your-handle"
     - label: "YouTube"
       icon: "fab fa-youtube"
-      url: "https://www.youtube.com/@HiddenLinks"
+      url: "https://www.youtube.com/@HiddenLinksYT"
 
 # Site owner socials (header/footer)
 twitter:
   username: ""
 github:
-  username: "your-username"
+  username: "ZhengNetLab"
 
 # UI
 minimal_mistakes_skin: "default"  # "air", "contrast", "dark", "dirt", "mint", "sunrise"

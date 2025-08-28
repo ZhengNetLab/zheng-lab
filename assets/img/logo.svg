@@ -1,1 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240"><rect width="100%" height="100%" fill="#111"/><circle cx="120" cy="120" r="72" fill="#0af"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="28" fill="#fff" font-family="Arial, Helvetica, sans-serif">Zheng Lab</text></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260">
+  <title>Zheng Lab for Network Science Wordmark</title>
+  <desc>Two-line wordmark with rows visually balanced to same length.</desc>
+  <style>
+    .row1 { font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+            font-size: 80px; font-weight: 700; text-anchor: middle; fill: black; }
+    .row2 { font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+            font-size: 40px; font-weight: 400; text-anchor: middle; fill: black;
+            letter-spacing: 4px; } /* stretch spacing to visually match length */
+  </style>
+
+  <!-- First row: Zheng Lab -->
+  <text x="450" y="120" class="row1">Zheng Lab</text>
+
+  <!-- Second row: for Network Science -->
+  <text x="450" y="190" class="row2">for Network Science</text>
+</svg>

@@ -1,5 +1,5 @@
 title: "Zheng Lab for Network Science"
-description: "Linking theory, data, and society."
+description: "Linking network and society."
 url: "https://zhengnetlab.github.io"  # e.g. https://your-username.github.io
 baseurl: "/zheng-lab"  # for project sites, set to '/repo-name'
 lang: en
@@ -25,7 +25,7 @@ paginate_path: "/blog/page:num/"
 author:
   name: "Ethan Zheng"
   avatar: "/assets/img/avatar.png"   # replace with your headshot (optional)
-  bio: "Econometrician & network scientist building Zheng Lab — causal inference, spectral graph theory, and sports analytics."
+  bio: "From institutions to nodes - let science breathe."
   location: "Munich, Germany"
   links:
     - label: "GitHub"

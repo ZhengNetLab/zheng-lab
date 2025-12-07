@@ -23,9 +23,9 @@ paginate_path: "/blog/page:num/"
 
 # Author profile
 author:
-  name: "Ethan Zheng"
+  name: "Xin Zheng"
   avatar: "/assets/img/avatar.png"   # replace with your headshot (optional)
-  bio: "From institutions to nodes - let science breathe."
+  bio: "A Knowledge Ecosystem Builder"
   location: "Munich, Germany"
   links:
     - label: "GitHub"

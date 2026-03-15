@@ -8,7 +8,7 @@ permalink: /about/
   <div class="container">
     <div class="hero-eyebrow">The Lab</div>
     <h1>About Zheng Lab</h1>
-    <p class="hero-sub">A one-person knowledge ecosystem at the intersection of network science and AI.</p>
+    <p class="hero-sub">A one-person knowledge ecosystem at the intersection of network science, econometrics, and AI.</p>
   </div>
 </section>
 
@@ -18,7 +18,7 @@ permalink: /about/
       <div class="post-body">
         <h2 style="font-size:var(--fs-xl);margin-bottom:var(--space-6);">Mission</h2>
         <p>Zheng Lab is a one-person <strong>Knowledge Ecosystem Builder (KEB)</strong> initiative that integrates research, theory-building, content creation, and applied insight into a unified intellectual environment.</p>
-        <p>Unlike traditional academic units, Zheng Lab designs and grows a self-sustaining knowledge ecosystem — combining network science and AI — to generate new conceptual frameworks, cultivate interdisciplinary connections, and translate structural insights into accessible narratives and practical tools.</p>
+        <p>Unlike traditional academic units, Zheng Lab designs and grows a self-sustaining knowledge ecosystem — combining network science, econometrics, and AI — to generate new conceptual frameworks, cultivate interdisciplinary connections, and translate structural insights into accessible narratives and practical tools.</p>
 
         <h2 style="font-size:var(--fs-xl);margin-top:var(--space-12);margin-bottom:var(--space-6);">The Empirical Essay Film</h2>
         <p>Our primary medium is the <strong>Empirical Essay Film</strong> — a form of rigorous storytelling resting on three pillars:</p>

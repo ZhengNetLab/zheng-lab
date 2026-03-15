@@ -1,21 +1,17 @@
 title: "Zheng Lab for Network Science"
 description: "A Knowledge Ecosystem Builder"
-url: "https://zhengnetlab.github.io"  # e.g. https://your-username.github.io
-baseurl: "/zheng-lab"  # for project sites, set to '/repo-name'
+url: "https://zhengnetlab.github.io"
+baseurl: "/zheng-lab"
 lang: en
 timezone: Europe/Berlin
-# logo: /assets/images/logo.svg
 
 # Build
 markdown: kramdown
 theme: null
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 plugins:
-  - jekyll-remote-theme
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-feed
-  - jekyll-include-cache
 
 # Pagination
 paginate: 5
@@ -24,28 +20,16 @@ paginate_path: "/blog/page:num/"
 # Author profile
 author:
   name: "Xin Zheng"
-  avatar: "/assets/img/avatar.png"   # replace with your headshot (optional)
+  avatar: "/assets/img/avatar.png"
   bio: "A Knowledge Ecosystem Builder"
   location: "Munich, Germany"
   links:
     - label: "GitHub"
-      icon: "fab fa-github"
       url: "https://github.com/ZhengNetLab"
     - label: "LinkedIn"
-      icon: "fab fa-linkedin"
       url: "https://www.linkedin.com/in/your-handle"
     - label: "YouTube"
-      icon: "fab fa-youtube"
       url: "https://www.youtube.com/@HiddenLinksYT"
-
-# Site owner socials (header/footer)
-twitter:
-  username: ""
-github:
-  username: "ZhengNetLab"
-
-# UI
-minimal_mistakes_skin: "default"  # "air", "contrast", "dark", "dirt", "mint", "sunrise"
 
 # Defaults
 defaults:
@@ -54,17 +38,13 @@ defaults:
       type: "posts"
     values:
       layout: single
-      author_profile: true
-      read_time: true
-      share: true
   - scope:
       path: ""
       type: "pages"
     values:
-      layout: single
-      author_profile: true
+      layout: default
 
-# Collections (optional for projects)
+# Collections
 collections:
   projects:
     output: true

@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<section class="hero" style="padding-bottom:var(--space-12);">
+  <div class="container">
+    <div class="hero-eyebrow">From the Lab</div>
+    <h1>Writing</h1>
+    <p class="hero-sub">Essays, research notes, and conceptual explorations at the intersection of econometrics, networks, and AI.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="container">
+    <div class="card-grid">
+      {% for post in site.posts %}
+      <article class="card">
+        {% if post.tags.first %}<span class="card-tag">{{ post.tags.first }}</span>{% endif %}
+        <h2 class="card-title" style="font-size:var(--fs-lg);"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        {% if post.excerpt %}<p class="card-excerpt">{{ post.excerpt | strip_html | truncate: 180 }}</p>{% endif %}
+        <div class="card-meta">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+        </div>
+        <span class="card-arrow" aria-hidden="true">→</span>
+      </article>
+      {% endfor %}
+    </div>
+
+    {% if site.posts.size == 0 %}
+    <p style="color:var(--color-muted);text-align:center;padding:var(--space-16) 0;">No posts yet. Check back soon.</p>
+    {% endif %}
+  </div>
+</section>

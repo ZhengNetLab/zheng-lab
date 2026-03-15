@@ -1,4 +1,5 @@
 ---
+layout: single
 title: "Welcome to Zheng Lab"
 excerpt: "A brief hello and what to expect here."
 tags: [announcement]

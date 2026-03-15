@@ -1,3 +1,11 @@
+---
+layout: single
+title: "From Journal to Lens: The Zheng Lab Manifesto on the Empirical Essay"
+excerpt: "Why the traditional academic cycle is broken, and how the Empirical Essay Film offers a new epistemology for rigorous public scholarship."
+tags: [manifesto]
+date: 2026-01-26
+---
+
 # From Journal to Lens: The Zheng Lab Manifesto on the Empirical Essay
 
 ### I. The Institutional Silo: Where Knowledge Goes to Die

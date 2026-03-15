@@ -1,7 +1,5 @@
 {
   "permissions": {
-    "allow": [
-      "WebFetch(domain:www.anthropic.com)"
-    ]
+    "defaultMode": "bypassPermissions"
   }
 }

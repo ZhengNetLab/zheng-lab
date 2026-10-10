@@ -1,10 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="455 202 573 404">
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="85" viewBox="455 202 573 404">
+  <title>Zheng Lab Frame Mark</title>
   <g transform="translate(1400 0) scale(-1 1)" fill="none" stroke="#1f2a37" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
-    <!-- 车架外轮廓 -->
     <path d="M 526 247 L 893 213 Q 909 211 914 226 L 933 295 Q 936 306 925 309 L 900 318 Q 886 323 876 335 L 663 584 Q 651 597 634 594 L 403 551 Q 381 546 381 527 Q 381 520 387 513 L 527 349 Q 545 330 538 308 L 520 256 Q 517 248 526 247 Z"/>
-    <!-- 主三角内框 -->
     <path d="M 586 262 L 854 242 Q 865 241 868 251 L 873 266 Q 876 275 869 282 L 660 519 Q 648 530 638 517 L 568 292 Q 562 266 586 262 Z"/>
-    <!-- 后三角内框 -->
     <path d="M 532 377 Q 539 369 547 378 Q 606 446 609 539 Q 609 556 592 555 L 418 534 Q 400 530 409 516 Z"/>
   </g>
 </svg>

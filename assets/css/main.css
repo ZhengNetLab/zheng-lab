@@ -242,6 +242,20 @@ p:last-child { margin-bottom: 0; }
   flex-wrap: wrap;
 }
 
+.hero-cover {
+  margin-top: var(--space-12);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: #fff;
+}
+
+.hero-cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* ---------- Section ---------- */
 .section {
   padding: clamp(var(--space-12), 7vw, 88px) 0;

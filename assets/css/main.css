@@ -257,22 +257,27 @@ p:last-child { margin-bottom: 0; }
   height: auto;
 }
 
-/* Homepage hero: full-bleed video on a band coloured like the video's
-   background; top and bottom edges fade into the band. */
+/* Homepage hero, sized like canyon.com: full width, 85% of the viewport
+   below the nav, video cropped to fill (object-fit: cover). The clamp keeps
+   the box between 2.6:1 and 16:9, so the video's central safe area (all
+   content lies within it) is never cropped on very wide or narrow screens. */
 .hero--video {
-  padding: clamp(var(--space-4), 2vw, var(--space-8)) 0;
+  padding: 0;
   background: var(--color-hero-video);
 }
 
 .hero--video .hero-cover {
+  height: clamp(100vw / 2.6, (100vh - var(--nav-h)) * 0.85, 100vw * 9 / 16);
+  height: clamp(100vw / 2.6, (100svh - var(--nav-h)) * 0.85, 100vw * 9 / 16);
   border: 0;
   border-radius: 0;
   background: transparent;
 }
 
 .hero--video .hero-cover video {
-  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 6%, #000 94%, transparent);
-  mask-image: linear-gradient(to bottom, transparent, #000 6%, #000 94%, transparent);
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
 }
 
 .visually-hidden {

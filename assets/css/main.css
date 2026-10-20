@@ -21,6 +21,7 @@
   --color-accent:    #e20000;
   --color-accent-dk: #cc0000;
   --color-accent-lt: #f2f2f2;
+  --color-hero-video: #e8e5de;
   --color-code-bg:   #222222;
   --color-code-fg:   #f2f2f2;
 
@@ -261,6 +262,29 @@ p:last-child { margin-bottom: 0; }
   display: block;
   width: 100%;
   height: auto;
+}
+
+/* Homepage hero: band colour sampled from the video's background so the
+   video blends in; its edges fade out instead of ending in a hard frame. */
+.hero--video {
+  background: var(--color-hero-video);
+}
+
+.hero--video .hero-cover {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.hero--video .hero-cover video {
+  -webkit-mask-image:
+    linear-gradient(to right, transparent, #000 5%, #000 95%, transparent),
+    linear-gradient(to bottom, transparent, #000 8%, #000 92%, transparent);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    linear-gradient(to right, transparent, #000 5%, #000 95%, transparent),
+    linear-gradient(to bottom, transparent, #000 8%, #000 92%, transparent);
+  mask-composite: intersect;
 }
 
 /* ---------- Section ---------- */

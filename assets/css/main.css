@@ -243,13 +243,6 @@ p:last-child { margin-bottom: 0; }
   flex-wrap: wrap;
 }
 
-.hero-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
-  gap: var(--space-12);
-  align-items: center;
-}
-
 .hero-cover {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
@@ -264,9 +257,10 @@ p:last-child { margin-bottom: 0; }
   height: auto;
 }
 
-/* Homepage hero: band colour sampled from the video's background so the
-   video blends in; its edges fade out instead of ending in a hard frame. */
+/* Homepage hero: full-bleed video on a band coloured like the video's
+   background; top and bottom edges fade into the band. */
 .hero--video {
+  padding: clamp(var(--space-4), 2vw, var(--space-8)) 0;
   background: var(--color-hero-video);
 }
 
@@ -277,14 +271,18 @@ p:last-child { margin-bottom: 0; }
 }
 
 .hero--video .hero-cover video {
-  -webkit-mask-image:
-    linear-gradient(to right, transparent, #000 5%, #000 95%, transparent),
-    linear-gradient(to bottom, transparent, #000 8%, #000 92%, transparent);
-  -webkit-mask-composite: source-in;
-  mask-image:
-    linear-gradient(to right, transparent, #000 5%, #000 95%, transparent),
-    linear-gradient(to bottom, transparent, #000 8%, #000 92%, transparent);
-  mask-composite: intersect;
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 6%, #000 94%, transparent);
+  mask-image: linear-gradient(to bottom, transparent, #000 6%, #000 94%, transparent);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
 }
 
 /* ---------- Section ---------- */
@@ -700,11 +698,6 @@ p:last-child { margin-bottom: 0; }
   .nav-links { display: none; }
 
   .hero h1 { max-width: 100%; }
-
-  .hero-grid {
-    grid-template-columns: 1fr;
-    gap: var(--space-8);
-  }
 
   .card-grid {
     grid-template-columns: 1fr;

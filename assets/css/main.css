@@ -256,7 +256,8 @@ p:last-child { margin-bottom: 0; }
   background: #fff;
 }
 
-.hero-cover img {
+.hero-cover img,
+.hero-cover video {
   display: block;
   width: 100%;
   height: auto;

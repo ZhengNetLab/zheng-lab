@@ -40,6 +40,11 @@ defaults:
       layout: single
   - scope:
       path: ""
+      type: "projects"
+    values:
+      layout: single
+  - scope:
+      path: ""
       type: "pages"
     values:
       layout: default

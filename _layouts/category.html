@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+{% assign prefix = '_projects/' | append: page.category | append: '/' %}
+{% assign docs = site.projects | sort: 'date' | reverse %}
+{% assign count = 0 %}
+
+<section class="hero" style="padding-bottom:var(--space-12);">
+  <div class="container">
+    <div class="hero-eyebrow">Projects</div>
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}<p class="hero-sub">{{ page.description }}</p>{% endif %}
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="container">
+    <div class="card-grid">
+      {% for doc in docs %}
+      {% if doc.relative_path contains prefix %}
+      {% assign count = count | plus: 1 %}
+      <article class="card">
+        {% if doc.tags.first %}<span class="card-tag">{{ doc.tags.first }}</span>{% endif %}
+        <h2 class="card-title" style="font-size:var(--fs-lg);"><a href="{{ doc.url | relative_url }}">{{ doc.title }}</a></h2>
+        {% if doc.excerpt %}<p class="card-excerpt">{{ doc.excerpt | strip_html | truncate: 180 }}</p>{% endif %}
+        <div class="card-meta">
+          <time datetime="{{ doc.date | date_to_xmlschema }}">{{ doc.date | date: "%B %-d, %Y" }}</time>
+        </div>
+        <span class="card-arrow" aria-hidden="true">→</span>
+      </article>
+      {% endif %}
+      {% endfor %}
+    </div>
+
+    {% if count == 0 %}
+    <p style="color:var(--color-muted);text-align:center;padding:var(--space-16) 0;">No articles yet. Check back soon.</p>
+    {% endif %}
+  </div>
+</section>

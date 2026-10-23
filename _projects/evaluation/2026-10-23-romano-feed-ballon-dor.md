@@ -1,6 +1,10 @@
-# Reading Romano's Feed: A Small Data Experiment Before the Ballon d'Or
-
-Oct 23, 2026 · @Xin
+---
+title: "Reading Romano's Feed: A Small Data Experiment Before the Ballon d'Or"
+excerpt: "Does Fabrizio Romano's feed already lean toward a Ballon d'Or winner? A look at 68 posts about Harry Kane and Lamine Yamal."
+date: 2026-10-23
+author: "@Xin"
+tags: [evaluation]
+---
 
 ## The idea
 

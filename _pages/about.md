@@ -37,7 +37,7 @@ permalink: /about/
           <div class="author-links">
             <a href="https://github.com/ZhengNetLab" target="_blank" rel="noopener">GitHub</a>
             <a href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a>
-            <a href="https://www.youtube.com/@HiddenLinksYT" target="_blank" rel="noopener">YouTube</a>
+            <a href="https://www.youtube.com/@zhenglab" target="_blank" rel="noopener">YouTube</a>
           </div>
         </div>
 

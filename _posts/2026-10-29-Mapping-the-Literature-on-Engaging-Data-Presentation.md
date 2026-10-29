@@ -1,13 +1,13 @@
 ---
 layout: single
-title: "Mapping the Literature on Engaging Data Presentation"
+title: "Literature Review on Engaging Data Presentation"
 excerpt: "Making data analysis engaging draws on five bodies of work: empirical visualization research, design principles, narrative practice, video explainers, and interactive web journalism."
 tags: [Blog]
 date: 2026-10-29
 ---
 
 
-# Mapping the Literature on Engaging Data Presentation
+# Literature Review on Engaging Data Presentation
 
 Oct 29, 2026 · @Xin
 

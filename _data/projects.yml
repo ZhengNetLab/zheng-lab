@@ -1,0 +1,10 @@
+# Sub-projects shown under "Projects" in the nav and on /projects/.
+# Each slug matches a folder in _projects/ and a page in _pages/.
+- slug: diagnose
+  title: Diagnose
+- slug: evaluation
+  title: Evaluation
+- slug: experiment
+  title: Experiment
+- slug: simulation
+  title: Simulation

@@ -6,10 +6,15 @@
     </a>
     <ul class="nav-links">
       <li><a href="{{ '/blog/' | relative_url }}"{% if page.url contains '/blog' %} class="active"{% endif %}>Blog</a></li>
-      <li><a href="{{ '/projects/diagnose/' | relative_url }}"{% if page.url contains '/projects/diagnose' %} class="active"{% endif %}>DIAGNOSE</a></li>
-      <li><a href="{{ '/projects/evaluation/' | relative_url }}"{% if page.url contains '/projects/evaluation' %} class="active"{% endif %}>EVALUATION</a></li>
-      <li><a href="{{ '/projects/experiment/' | relative_url }}"{% if page.url contains '/projects/experiment' %} class="active"{% endif %}>EXPERIMENT</a></li>
-      <li><a href="{{ '/projects/simulation/' | relative_url }}"{% if page.url contains '/projects/simulation' %} class="active"{% endif %}>SIMULATION</a></li>
+      <li class="nav-dropdown">
+        <a href="{{ '/projects/' | relative_url }}"{% if page.url contains '/projects' %} class="active"{% endif %}>Projects</a>
+        <ul class="nav-submenu">
+          {% for area in site.data.projects %}
+          {% assign area_url = '/projects/' | append: area.slug | append: '/' %}
+          <li><a href="{{ area_url | relative_url }}"{% if page.url contains area_url %} class="active"{% endif %}>{{ area.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </li>
       <li><a href="{{ '/about/' | relative_url }}"{% if page.url == '/about/' %} class="active"{% endif %}>About</a></li>
       <li><a href="https://www.youtube.com/@zhenglab" target="_blank" rel="noopener" class="btn btn-outline" style="padding:0.4em 1em;">YouTube ↗</a></li>
     </ul>
